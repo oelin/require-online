@@ -1,2 +1,2 @@
 # require-online
-Install uninstalled packages on require.
+Install node packages when required.
