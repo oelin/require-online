@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "detect-package-manager": "^2.0.1",
+    "shelljs": "^0.8.5",
+  },
+  "name": "require-online",
+  "version": "1.0.0",
+  "description": "Install node packages when required.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oelin/require-online.git"
+  },
+  "keywords": [
+    "require",
+    "install",
+    "npm",
+    "pnpm",
+    "yarn"
+  ],
+  "author": "oelin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oelin/require-online/issues"
+  },
+  "homepage": "https://github.com/oelin/require-online#readme"
+}
