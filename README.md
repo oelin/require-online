@@ -15,5 +15,5 @@ npm i require-online
 ```js
 const $require = require('require-online')
 
-const express = $require('express') // Will install express if needed.
+const express = await $require('express') // Will install express if needed.
 ```
