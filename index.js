@@ -1,5 +1,5 @@
+const shell = require('shelljs')
 const { detect } = require('detect-package-manager')
-const sh = require('shelljs')
 
 
 const installerCommands = {
@@ -9,14 +9,15 @@ const installerCommands = {
 }
 
 
-module.exports = function(name) {
+module.exports = async function(name) {
         try {
                 return require(name)
         } catch {
-                detect()
-                        .then(installer => {
-                                const installerCommand = installerCommands[installer] || installerCommands['npm']
-                                shell.exec(installerCommand + ' ' + name)
-                        })
+                const installer = await detect()
+                const installerCommand = installerCommands[installer] || installerCommands['npm']
+                
+                shell.exec(installerComamnd + ' ' + name)
+                
+                return require(name)
         }
 }
